@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品分享</title>
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <script src="./_js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        .natopmg {
+            margin-top: 90px;
+            margin-bottom: 20px;
+        }
+
+        .pic {
+            overflow: hidden;
+            height: 300px;
+            position: relative;
+        }
+
+        .prodimg {
+            width: 100%;
+            height: 300px;
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
+            opacity: 1;
+            display: block;
+            backface-visibility: hidden;
+        }
+
+        .prodimg:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .headtext {
+            font-size: 20px;
+        }
+
+        .headct {
+            color: #1B75BF;
+        }
+
+        .maintitle {
+            background-color: black;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        /* 圖片上文字 */
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 20px;
+            padding: 16px 32px;
+            width: 499px;
+            height: 100%;
+        }
+
+        .pic:hover .prodimg {
+            opacity: 0.5;
+            
+        }
+
+        .pic:hover .middle {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-light fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href=""><img src="./logo/H1/twitter_header_photo_1.png" alt="logo"
+                            class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-3">
+                                <a class="nav-link active headtext" aria-current="page" href="./index.html">首頁</a>
+                            </li>
+                            <li class="nav-item dropdown me-3">
+                                <a class="nav-link dropdown-toggle headtext" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">3D列印技術</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item headtext" href="./FDM.html">FDM列印</a></li>
+                                    <li><a class="dropdown-item headtext" href="./SDL.html">光固化列印</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link headtext" href="./3D.html">3D列印代工</a>
+                            </li>
+                            <!-- <li class="nav-item me-3">
+                                <a class="nav-link" href="#">服務項目</a>
+                            </li> -->
+                            <li class="nav-item me-3">
+                                <a class="nav-link headtext" href="./photo.html">作品分享</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link headtext" href="./qa.html">常見問題</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link headtext" href="./conact.html">聯絡我們</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">3D列印種類</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">SLA</a></li>
+                                    <li><a class="dropdown-item" href="#">光固化</a></li>
+                                    <li><a class="dropdown-item" href="#">金屬列印</a></li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="maintitle">
+            <h1 class="natopmg">作品分享</h1>
+        </div>
+        <div class="container marketing mt-5">
+            <div class="row">
+                <div class="col-md-4 pic mt-3 ">
+                    <img src="./prod-img/口袋妖怪.jfif" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">寶可夢</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/宝可梦-超梦.png" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">寶可夢-超夢</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/皮卡丘宠物小精灵.png" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">寶可夢-皮卡丘</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/会动的八爪鱼.jfif" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">會動的章魚</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/自走犀牛.png" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">自走犀牛</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/环形灯.JPG" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">環形燈</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/头颅骨骼模型.jpg" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">頭顱骨骼模型</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/灯罩.jpeg" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">各式燈罩</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/噪音制造器.png" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">噪音製造器</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/GTR.png" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">GTR 汽車模型</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/关节龙.PNG" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">會動的龍</div>
+                    </div>
+                </div>
+                <div class="col-md-4 pic mt-3">
+                    <img src="./prod-img/巴黎圣母院.jfif" alt="" class="prodimg">
+                    <div class="middle">
+                        <div class="text">巴黎聖母院</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-md-between align-items-center py-3 my-4 border-top">
+            
+            <ul class="nav col-md-4 d-flex align-items-center list-unstyled mb-3 mb-md-0">
+                <li class="ms-3">
+                    <a class="text-muted" href="./index.html">
+                        <i class="bi bi-house-door-fill" style="font-size: 24px;">
+                        </i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./FDM.html">
+                        <i class="bi bi-box-fill" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./SDL.html">
+                        <i class="bi bi-align-bottom" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./3D.html">
+                        <i class="bi bi-person-workspace" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./photo.html">
+                        <i class="bi bi-images" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./qa.html">
+                        <i class="bi bi-question-circle-fill" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./conact.html">
+                        <i class="bi bi-telephone-fill" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="col-md-4 d-flex align-items-center justify-content-end">
+                <span class="mb-3 mb-md-0 text-muted">© 2023 Solidprint Company, Inc</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

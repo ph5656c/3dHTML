@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首頁</title>
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <link rel="stylesheet" href="./_css/carousel.css">
+    <script src="./_js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        .logo {
+            height: 50px;
+        }
+
+        .headtext {
+            font-size: 20px;
+        }
+
+        .headct {
+            color: #1B75BF;
+        }
+
+        .maintext {
+            font-weight: bold;
+            line-height: 200%;
+        }
+
+        #myVideo {
+            background-color: black;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 600px;
+        }
+
+        .ctrcen {
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="home" viewBox="0 0 16 16">
+            <path
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+            </path>
+        </symbol>
+    </svg>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-light fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href=""><img src="./logo/H1/twitter_header_photo_1.png" alt="logo"
+                            class="logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-3">
+                                <a class="nav-link active headtext" aria-current="page" href="./index.html">首頁</a>
+                            </li>
+                            <li class="nav-item dropdown me-3">
+                                <a class="nav-link dropdown-toggle headtext" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">3D列印技術</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item headtext" href="./FDM.html">FDM列印</a></li>
+                                    <li><a class="dropdown-item headtext" href="./SDL.html">光固化列印</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link headtext" href="./3D.html">3D列印代工</a>
+                            </li>
+                            <!-- <li class="nav-item me-3">
+                                <a class="nav-link" href="#">服務項目</a>
+                            </li> -->
+                            <li class="nav-item me-3">
+                                <a class="nav-link headtext" href="./photo.html">作品分享</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link headtext" href="./qa.html">常見問題</a>
+                            </li>
+                            <li class="nav-item me-3">
+                                <a class="nav-link headtext" href="./conact.html">聯絡我們</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    aria-expanded="false">3D列印種類</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">SLA</a></li>
+                                    <li><a class="dropdown-item" href="#">光固化</a></li>
+                                    <li><a class="dropdown-item" href="#">金屬列印</a></li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div>
+            <video class="ctrcen" controls autoplay muted loop id="myVideo">
+                <source src="./video/sonic-mighty-8k-8kshen-ji-jie-xi-du-da-yin-liang-gao-xiao-neng.mp4"
+                    type="video/mp4">
+            </video>
+        </div>
+        <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class=""></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class=""></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./industry-gab927fa69_1920-1.jpg" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./pexels-lucie-siegelsteinová-13624759-1.jpg" alt="2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="" alt="2" class="d-block w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> -->
+        <div>
+            <div class="container marketing pt-5 ">
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal headct">關於3D列印</h2>
+                        <p class="lead m-5 maintext">3D列印 技術起源於美國，屬於快速成形技術的一種，利用微積分來計算出精密的面積與體積，通過逐層堆疊累積的方式來構造物體的技術。</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./img/3d.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa"
+                            dy=".3em">500x500</text>
+                    </svg> -->
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading fw-normal lh-1 headct">FDM
+                            <!-- <span class="text-muted">See for yourself.</span> -->
+                        </h2>
+                        <p class="lead m-5 maintext">FDM(熔融沉積成型)是一種將各種熱熔性的絲狀材料（蠟、ABS和尼龍等）加熱熔化成形的方法，是3D列印技術的一種。</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img src="./img/GrizzledNiftyCrustacean-small-1.gif" alt=""
+                        style="width: 100%; height: 100%; object-fit: cover;">
+
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette" style="padding-bottom: 3rem;">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading fw-normal  headct">光固化</h2>
+                        <p class="lead m-5 maintext">
+                            光固化技術是使用液態樹脂作為原料，在樹脂槽內倒入樹脂並將列印平台浸泡其中，再以光照面板或雷射UV照射光束到列印平台上，受到照射的樹脂會硬化成型，藉由平台從樹脂槽中升起來層層堆疊成型。
+                        </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="./img/SLA_DWS-1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+
+                <!-- <hr class="featurette-divider"> -->
+
+                <!-- /END THE FEATURETTES -->
+
+            </div>
+        </div>
+    </main>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-md-between align-items-center py-3 my-4 border-top">
+            
+            <ul class="nav col-md-4 d-flex align-items-center list-unstyled mb-3 mb-md-0">
+                <li class="ms-3">
+                    <a class="text-muted" href="./index.html">
+                        <i class="bi bi-house-door-fill" style="font-size: 24px;">
+                        </i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./FDM.html">
+                        <i class="bi bi-box-fill" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./SDL.html">
+                        <i class="bi bi-align-bottom" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./3D.html">
+                        <i class="bi bi-person-workspace" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./photo.html">
+                        <i class="bi bi-images" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./qa.html">
+                        <i class="bi bi-question-circle-fill" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-muted" href="./conact.html">
+                        <i class="bi bi-telephone-fill" style="font-size: 24px;"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="col-md-4 d-flex align-items-center justify-content-end">
+                <span class="mb-3 mb-md-0 text-muted">© 2023 Solidprint Company, Inc</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
